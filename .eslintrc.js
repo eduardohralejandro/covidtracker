@@ -18,6 +18,12 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
   ],
+  ignorePatterns: [
+    'node_modules/',
+    'src/serviceWorker.ts',
+    'template/src/serviceWorker.ts',
+    'src/assets/statics/'
+  ],
   rules: {
     'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': ['error'],
